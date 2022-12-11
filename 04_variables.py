@@ -23,9 +23,44 @@ VARIABLE NAMES
 """
 
 username = "Peter Daniel"
-userName = "Peter Daniel"  # ✅ My Favourite
-user_name = "Peter Daniel"
+userName = "Peter Daniel"  # ✅ Camel Case - My Favourite
+user_name = "Peter Daniel"  # Snake Case
 _userName = "Peter Daniel"
 _user_name = "Peter Daniel"
 USERNAME = "Peter Daniel"
 userName1 = "Peter Daniel"
+UserName = "Peter Daniel"  # Pascal Case
+
+"""
+Assign Multiple Values
+"""
+
+# Many Values to Multiple Variables
+x, y, z = "One", "Two", "Three"
+
+# One Value to Multiple Variables
+x1 = y1 = z1 = "One Value"
+
+# Unpack a Collection
+values = [1, 2, 3]
+x2, y2, z2 = values
+
+# Output Variables
+print(x)
+print(x, y, z)
+print(x1 + y1 + z1)
+
+"""
+Python - Global Variables
+"""
+gx = "Global Value"
+
+
+def my_function():
+    global anotherGX
+    anotherGX = "Using global keyword"
+    print(f'This is {gx}')
+    print(f'Another Global variable {anotherGX}')
+
+
+my_function()
